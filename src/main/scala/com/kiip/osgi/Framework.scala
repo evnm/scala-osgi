@@ -11,6 +11,9 @@ import org.osgi.framework.launch.{Framework => OSGiFramework, FrameworkFactory}
 object Framework {
   /**
    * Starts a framework instance with the given properties.
+   *
+   * @param config Configuration to pass to initialize the OSGi framework.
+   * @return Instance of the OSGi framework.
    * */
   def start(config: JProperties = null) = {
     val fwk = factory().newFramework(config)
@@ -21,7 +24,9 @@ object Framework {
 
   /**
    * Gets the OSGi FrameworkFactory which can be used to initialize
-   * a new OSGi framework.
+   * a new OSGi framework. Typically you won't need to interface with
+   * this directly since you can use `start` to initialize a new
+   * framework using this factory.
    * */
   def factory(): FrameworkFactory = {
     getClass().getClassLoader().getResource("META-INF/services/org.osgi.framework.launch.FrameworkFactory") match {
@@ -42,7 +47,7 @@ object Framework {
 
 /**
  * Enrichment class for the OSGi framework class. This makes interfacing
- * with an actual instance of Framework a bit easier.
+ * with an actual instance of Framework a bit easier and more Scala-like.
  * */
 class RichFramework(framework: OSGiFramework) {
   val context = framework.getBundleContext()
