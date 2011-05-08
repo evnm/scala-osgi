@@ -53,7 +53,7 @@ some helpers:
 If you'd like to build `scala-osgi` from source, check out the git repository
 and run the following:
 
-   sbt compile
+    sbt compile
 
 You can also `sbt package`, `sbt publish-local`, or whatever you'd like,
 since `scala-osgi` is an SBT project.
