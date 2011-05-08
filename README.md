@@ -60,8 +60,9 @@ since `scala-osgi` is an SBT project.
 
 ## Contributing
 
-Find a bug? Have a feature request? File an [issue](#) or submit a
-[pull request](#) and we'll work with you on merging it in. Don't
+Find a bug? Have a feature request? File an [issue](https://github.com/kiip/scala-osgi/issues)
+or submit a [pull request](https://github.com/kiip/scala-osgi/pulls)
+and we'll work with you on merging it in. Don't
 worry too much about style or doing it "the right way," since we'd
 rather get more contributions than burdening you with making sure its
 absolutely perfect.
