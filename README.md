@@ -48,6 +48,12 @@ some helpers:
       case ServiceModified(service, properties) => println("Service modified!")
     }
 
+## Using `scala-osgi` in an OSGi Project
+
+`scala-osgi` is packaged as an OSGi bundle with all the required metadata.
+Simply install the `scala-osgi` JAR file into the OSGi application and it
+will become available to all other bundles.
+
 ## Building
 
 If you'd like to build `scala-osgi` from source, check out the git repository
