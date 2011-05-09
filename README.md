@@ -19,7 +19,7 @@ provides a great DSL for consuming and creating OSGi services.
 
 `scala-osgi` is a library built upon Scala's implicits in order to enrich
 pre-existing OSGi classes. Therefore, instead of picking specific classes
-to import, its recommend you import all, in order to bring the implicit
+to import, it's recommended you import all, in order to bring the implicit
 conversions into the scope:
 
     import com.kiip.osgi._
